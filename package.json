@@ -1,0 +1,24 @@
+{
+  "name": "autocomplete-paid-memberships-pro",
+  "main": "./lib/main",
+  "version": "0.1",
+  "description": "Autocomplete for Paid Memberships Pro functions and hooks.",
+  "keywords": [
+    "autocomplete",
+    "provider",
+    "boilerplate"
+  ],
+  "repository": "https://github.com/andrewlimaza/atom-paid-memberships-pro-autocomplete",
+  "author": "Andrew Lima (https://paidmembershipspro.com)",
+  "license": "GPL2",
+  "engines": {
+    "atom": ">=1.15.0 <2.0.0"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  }
+}
