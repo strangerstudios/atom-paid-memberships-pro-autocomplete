@@ -1,0 +1,37 @@
+[
+	{
+		"text": "pmpro_is_login_page()",
+		"description": "See if a user is on the PMPro login page. \n@return bool.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L46"
+	},
+	{
+		"text": "pmpro_is_plugin_active( $plugin )",
+		"description": "See if a WordPress plugin is active. \n\nParameters\n$plugin (string) The plugin slug you want to check if active. \n\nReturns\nBoolean.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L51"
+	},
+	{
+		"text": "pmpro_getMatches( $p, $s, $firstvalue = false, $n = 1 )",
+		"description": "Description to be updated. \n\nParameters\n$p (string) description.\n$s (string) description.\n$firstvalue (string) description.\n$n (string) description. \n\nReturns\nBoolean.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L56"
+	},
+	{
+		"text": "pmpro_br2nl( $text, $tags = 'br' )",
+		"description": "Description to be updated. \n\nParameters\n$text (string) description.\n$tags (string) description. \n\nReturns\nString description of string.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L70"
+	},
+	{
+		"text": "pmpro_getOption( $s, $force = false )",
+		"description": "Description to be updated. \n\nParameters\n$s (string) description.\n$force (bool) description. \n\nReturns\nRetrieved option value.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L83"
+	},
+	{
+		"text": "pmpro_setOption( $s, $v = null, $sanitize_function = 'sanitize_text_field' )",
+		"description": "Description to be updated. \n\nParameters\n$s (string) description.\n$force (bool) description. \n\nReturns\nRetrieved option value.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L83"
+	},
+	{
+		"text": "pmpro_get_slug( $post_id )",
+		"description": "Get a slug of a particular post. \n\nParameters\n$post_id (int) The post's ID you are querying. \n\nReturns\nRetrieved option value.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L83"
+	}
+]

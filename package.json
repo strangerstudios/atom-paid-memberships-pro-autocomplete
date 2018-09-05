@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-paid-memberships-pro",
   "main": "./lib/main",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "Autocomplete for Paid Memberships Pro functions and hooks.",
   "keywords": [
     "autocomplete",
