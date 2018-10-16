@@ -1,31 +1,31 @@
 [
 	{
-		"text": "pmpro_is_login_page()",
+		"text": "pmpro_is_login_page();",
 		"description": "See if a user is on the PMPro login page. \n@return bool.",
 		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L46"
 	},
 	{
-		"text": "pmpro_is_plugin_active( $plugin )",
+		"text": "pmpro_is_plugin_active( $plugin );",
 		"description": "See if a WordPress plugin is active. \n\nParameters\n$plugin (string) The plugin slug you want to check if active. \n\nReturns\nBoolean.",
 		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L51"
 	},
 	{
-		"text": "pmpro_getMatches( $p, $s, $firstvalue = false, $n = 1 )",
+		"text": "pmpro_getMatches( $p, $s, $firstvalue = false, $n = 1 );",
 		"description": "Description to be updated. \n\nParameters\n$p (string) description.\n$s (string) description.\n$firstvalue (string) description.\n$n (string) description. \n\nReturns\nBoolean.",
 		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L56"
 	},
 	{
-		"text": "pmpro_br2nl( $text, $tags = 'br' )",
+		"text": "pmpro_br2nl( $text, $tags = 'br' );",
 		"description": "Description to be updated. \n\nParameters\n$text (string) description.\n$tags (string) description. \n\nReturns\nString description of string.",
 		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L70"
 	},
 	{
-		"text": "pmpro_getOption( $s, $force = false )",
+		"text": "pmpro_getOption( $s, $force = false );",
 		"description": "Description to be updated. \n\nParameters\n$s (string) description.\n$force (bool) description. \n\nReturns\nRetrieved option value.",
 		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L83"
 	},
 	{
-		"text": "pmpro_setOption( $s, $v = null, $sanitize_function = 'sanitize_text_field' )",
+		"text": "pmpro_setOption( $s, $v = null, $sanitize_function = 'sanitize_text_field' );",
 		"description": "Description to be updated. \n\nParameters\n$s (string) description.\n$force (bool) description. \n\nReturns\nRetrieved option value.",
 		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L83"
 	},
@@ -33,5 +33,70 @@
 		"text": "pmpro_get_slug( $post_id )",
 		"description": "Get a slug of a particular post. \n\nParameters\n$post_id (int) The post's ID you are querying. \n\nReturns\nRetrieved option value.",
 		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L83"
+	},
+	{
+		"text": "pmpro_isLevelFree( $level );",
+		"description": "Check if a membership level is free. \n\nParameters\n$level (obj) The level's object you are querying. \n\nReturns\nBoolean.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L167"
+	},
+	{
+		"text": "pmpro_areLevelsFree( $levels );",
+		"description": "Check if multiple membership levels are free. \n\nParameters\n$levels (array) The level's object you are querying. \n\nReturns\nBoolean. (if all levels querying are free)",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L176"
+	},
+	{
+		"text": "pmpro_isLevelRecurring( $level );",
+		"description": "Check if a membership level is recurring. \n\nParameters\n$level (obj) The level's object you are querying. \n\nReturns\nBoolean.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L187"
+	},
+	{
+		"text": "pmpro_isLevelTrial( $level );",
+		"description": "Check if a membership level has a trial. \n\nParameters\n$level (obj) The level's object you are querying. \n\nReturns\nBoolean.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L187"
+	},
+	{
+		"text": "pmpro_isLevelExpiring( $level );",
+		"description": "Check if a membership level has an enddate. \n\nParameters\n$level (obj) The level's object you are querying. \n\nReturns\nBoolean.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L203"
+	},
+	{
+		"text": "pmpro_isLevelExpiringSoon( $level );",
+		"description": "Check if a membership level is expiring soon. \n\nParameters\n$level (obj) The level's object you are querying. \n\nReturns\nBoolean.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L218"
+	},
+	{
+		"text": "pmpro_getLevelCost( $level, $tags = true, $short = false );",
+		"description": "Get membership level cost text. \n\nParameters\n$level (obj) The level's object you are querying.\n$tags (bool) Strip tags.\n$short (bool) Show short price description. \n\nReturns\nString.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L318"
+	},
+	{
+		"text": "pmpro_getLevelsCost( $level, $tags = true, $short = false );",
+		"description": "Get membership level cost text for multiple levels. \n\nParameters\n$level (array) The level's array you are querying.\n$tags (bool) Strip tags.\n$short (bool) Show short price description. \n\nReturns\nString.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L318"
+	},
+	{
+		"text": "pmpro_getLevelsCost( $level, $tags = true, $short = false );",
+		"description": "Get membership level cost text for multiple levels. \n\nParameters\n$level (array) The level's array you are querying.\n$tags (bool) Strip tags.\n$short (bool) Show short price description. \n\nReturns\nString.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L318"
+	},
+	{
+		"text": "pmpro_getLevelExpiration( $level );",
+		"description": "Get membership expiration text. \n\nParameters\n$level (obj) The level's object you are querying. \n\nReturns\nString.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L503"
+	},
+	{
+		"text": "pmpro_getLevelsExpiration( $levels );",
+		"description": "Get membership expiration text for multiple levels. \n\nParameters\n$levels (array) The levels array you are querying. \n\nReturns\nString.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L515"
+	},
+	{
+		"text": "pmpro_next_payment( $user_id = null, $order_status = 'success', $format = 'timestamp' );",
+		"description": "Get memberships next payment date for recurring memberships. \n\nParameters\n$user_id (int) The user's level ID.\n$order_status (str) The membership order status to query.\n$format (str) Date format to return. \n\nReturns\nString (Date).",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L515"
+	},
+	{
+		"text": "pmpro_hasMembershipLevel( $levels = null, $user_id = null );",
+		"description": "See if a user has a certain membership level or any level. (Leave blank to check against all levels for current user.) \n\nParameters\n$levels (array) The membership(s) level ID.\n$user_id (int) Specific user ID to check against. \n\nReturns\nBoolean.",
+		"descriptionMoreURL": "https://github.com/strangerstudios/paid-memberships-pro/blob/dev/includes/functions.php#L753"
 	}
 ]

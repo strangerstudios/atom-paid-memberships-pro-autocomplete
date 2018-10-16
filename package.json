@@ -8,7 +8,7 @@
     "provider",
     "boilerplate"
   ],
-  "repository": "https://github.com/andrewlimaza/atom-paid-memberships-pro-autocomplete",
+  "repository": "https://github.com/strangerstudios/atom-paid-memberships-pro-autocomplete",
   "author": "Andrew Lima (https://paidmembershipspro.com)",
   "license": "GPL2",
   "engines": {
